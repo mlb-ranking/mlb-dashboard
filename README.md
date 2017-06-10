@@ -8,5 +8,7 @@ Goal: Build an datastore and API to perform CRUD operations on baseball stats.
 ## Resources
 * https://getpocket.com/a/queue/grid/mlb-app/
 
-## Setup
-
+## Requirements
+* Docker
+* Node.js (v8.1)
+* Yarn
