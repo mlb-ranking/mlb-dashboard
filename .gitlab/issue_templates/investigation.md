@@ -6,4 +6,3 @@ Goal:
  Item | Good | Bad
 
 ## Resources
-
