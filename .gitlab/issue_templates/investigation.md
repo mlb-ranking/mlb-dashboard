@@ -1,9 +1,11 @@
-# Invesitagion - <TITLE_HERE>
+# Investigation - <TITLE_HERE>
 
 Goal: 
 
-## Background
-Longer goal
+## Results
+| URL           | Pros          | Cons  |
+| ------------- |:-------------:| -----:|
+[Link](https://google.com) | Why it's great | Why it sucks
 
 ## Resources
 * [Link](http://google.com)
