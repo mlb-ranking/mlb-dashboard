@@ -1,46 +1,18 @@
 ---
-title: About Us
+title: About
 component: ContentPage
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat
-tortor fermentum mi fermentum dignissim. Nullam vel ipsum ut ligula elementum
-lobortis. Maecenas aliquam, massa laoreet lacinia pretium, nisi urna venenatis
-tortor, nec imperdiet tellus libero efficitur metus. Fusce semper posuere
-ligula, et facilisis metus bibendum interdum. Mauris at mauris sit amet sem
-pharetra commodo a eu leo. Nam at est non risus cursus maximus. Nam feugiat
-augue libero, id consectetur tortor bibendum non. Quisque nec fringilla lorem.
-Nullam efficitur vulputate mauris, nec maximus leo dignissim id.
 
-In hac habitasse platea dictumst. Duis sagittis dui ac ex suscipit maximus.
-Morbi pellentesque venenatis felis sed convallis. Nulla varius, nibh vitae
-placerat tempus, mauris sem elementum ipsum, eget sollicitudin nisl est vel
-purus. Fusce malesuada odio velit, non cursus leo fermentum id. Cras pharetra
-sodales fringilla. Etiam quis est a dolor egestas pellentesque. Maecenas non
-scelerisque purus, congue cursus arcu. Donec vel dapibus mi. Mauris maximus
-posuere placerat. Sed et libero eu nibh tristique mollis a eget lectus. Donec
-interdum augue sollicitudin vehicula hendrerit. Vivamus justo orci, molestie
-ac sollicitudin ac, lobortis at tellus. Etiam rhoncus ullamcorper risus eu
-tempor. Sed porttitor, neque ac efficitur gravida, arcu lacus pharetra dui, in
-consequat elit tellus auctor nulla. Donec placerat elementum diam, vitae
-imperdiet lectus luctus at.
+## Preface
+Having played baseball for such a long time this project is very interesting to me on many levels. Much of the baseball specific analysis will be based upon is The Hidden Game by John Thorn and Pete Palmer. However, a significant portion of the project will be based on principles of data science not specific to baseball including data mining (with scheduling), association rules, recommender systems utilizing Jaccard Similarity.
 
-Nullam eu feugiat mi. Quisque nec tristique nisl, dignissim dictum leo. Nam
-non quam nisi. Donec rutrum turpis ac diam blandit, id pulvinar mauris
-suscipit. Pellentesque tincidunt libero ultricies risus iaculis, sit amet
-consequat velit blandit. Fusce quis varius nulla. Nullam nisi nisi, suscipit
-ut magna quis, feugiat porta nibh. Sed id enim lectus. Suspendisse elementum
-justo sapien, sit amet consequat orci accumsan et. Aliquam ornare ullamcorper
-sem sed finibus. Nullam ac lacus pulvinar, egestas felis ut, accumsan est.
+## Goals
 
-Pellentesque sagittis vehicula sem quis luctus. Proin sodales magna in lorem
-hendrerit aliquam. Integer eu varius orci. Vestibulum ante ipsum primis in
-faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut at mauris
-nibh. Suspendisse maximus ac eros at vestibulum.
+A application to predict which MLB teams will be contenders in the range of 3-5 years. Also suggest what a particular team can do to make their team a contender in 3-5 years. Focus which stage a team is in (buying, selling, rebuilding, etc.) and how aggressive they are in that mode. Determine value of players focused on WAR and years of control as primary factors.
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque egestas
-tortor et dui consequat faucibus. Nunc vitae odio ornare, venenatis ligula a,
-vulputate nisl. Aenean congue varius ex, sit amet bibendum odio posuere at.
-Nulla facilisi. In finibus, nulla vitae tincidunt ornare, sapien nulla
-fermentum mauris, sed consectetur tortor arcu eget arcu. Vestibulum vel quam
-enim.
+This will also be an exploration of ES2015 / ES6, Map and Reduce, and draw many ideas and algorithms from data science.
+
+## More
+
+* [Contribute](https://github.com/mlb-ranking)
+* [Read the Docs](https://mlb-ranking.readthedocs.io/en/latest/)
