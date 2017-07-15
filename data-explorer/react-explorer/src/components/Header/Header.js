@@ -21,12 +21,7 @@ class Header extends React.Component {
         <div className={s.container}>
           <Navigation />
           <Link className={s.brand} to="/">
-            <img
-              src={logoUrl}
-              width="38"
-              height="38"
-              alt="React"
-            />
+            <img src={logoUrl} width="38" height="38" alt="React" />
             <span className={s.brandTxt}>MLB Data Explorer</span>
           </Link>
           <div className={s.banner}>
