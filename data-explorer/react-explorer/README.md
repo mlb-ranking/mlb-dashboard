@@ -1,3 +1,17 @@
+# React MLB Data Explorer
+
+## Setup
+`yarn install start`
+
+## Sources
+* https://www.mysportsfeeds.com/data-feeds/mlb/feedlist
+
+## Examples
+* [Single Player Cumulative](https://api.mysportsfeeds.com/v1.1/sample/pull/mlb/2016-2016-regular/cumulative_player_stats.json?player=freeman)
+* [Cumulative Stats](https://api.mysportsfeeds.com/v1.1/sample/pull/mlb/2016-2016-regular/cumulative_player_stats.json?)
+
+---
+
 ## React Starter Kit — "[isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)" web app boilerplate &nbsp; <a href="https://github.com/kriasoft/react-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/kriasoft/react-starter-kit.svg?style=social&label=Star&maxAge=3600" height="20"></a> <a href="https://twitter.com/ReactStarter"><img src="https://img.shields.io/twitter/follow/ReactStarter.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
 
 [React Starter Kit](https://www.reactstarterkit.com) is an opinionated boilerplate for web

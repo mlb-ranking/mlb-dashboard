@@ -18,7 +18,9 @@ async function action({ fetch }) {
     }),
   });
   const { data } = await resp.json();
+
   if (!data || !data.news) throw new Error('Failed to load the news feed.');
+
   return {
     chunks: ['home'],
     title: 'React Starter Kit',
