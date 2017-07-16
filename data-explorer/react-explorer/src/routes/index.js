@@ -15,6 +15,10 @@ const routes = {
       load: () => import(/* webpackChunkName: 'player' */ './player'),
     },
     {
+      path: '/game/:teamOrPlayer',
+      load: () => import(/* webpackChunkName: 'game' */ './game'),
+    },
+    {
       path: '/player/:first-last-id',
       load: () => import(/* webpackChunkName: 'player' */ './player'),
     },

@@ -1,7 +1,7 @@
 import { URL } from 'url';
 import fetch from 'isomorphic-fetch';
 import { GraphQLList as List } from 'graphql';
-import CumulativePlayerStatType from '../types/CumulativePlayerStatType';
+import PlayerType from '../types/PlayerType';
 import log from '../../../tools/log';
 
 // API Service Route
@@ -16,7 +16,7 @@ const lastFetchTasks = {};
 // Misc
 let playersData;
 // const lastFetchTime = new Date(1970, 0, 1);
-const debug = true;
+const debug = false;
 const logger = log.debugCreator('queries-players', { enabled: debug });
 
 /**
@@ -77,7 +77,7 @@ function hasValidPlayers(data) {
 }
 
 const player = {
-  type: new List(CumulativePlayerStatType),
+  type: new List(PlayerType),
   resolve({ request }) {
     // Create the proper url
     if (request.body.name) {

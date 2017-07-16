@@ -50,7 +50,7 @@ class Player extends React.Component {
               {this.getName()} | {this.props.player.Age}
             </h2>
             <pre>
-              Properties: {JSON.stringify(this.props, null, '\t')}
+              Propderties: {JSON.stringify(this.props, null, '\t')}
             </pre>
           </article>
         </div>

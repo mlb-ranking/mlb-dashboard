@@ -14,8 +14,8 @@ import {
   GraphQLBoolean as BoolType,
 } from 'graphql';
 
-const CumulativePlayerStatType = new ObjectType({
-  name: 'CumulativePlayerStat',
+const PlayerType = new ObjectType({
+  name: 'Player',
   fields: {
     Age: { type: IntType },
     BirthCity: { type: StringType },
@@ -31,4 +31,4 @@ const CumulativePlayerStatType = new ObjectType({
   },
 });
 
-export default CumulativePlayerStatType;
+export default PlayerType;

@@ -18,6 +18,7 @@ import fetch from 'node-fetch';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import PrettyError from 'pretty-error';
+import morgan from 'morgan';
 import App from './components/App';
 import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
@@ -46,6 +47,7 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(morgan('tiny'));
 
 //
 // Authentication
@@ -174,7 +176,11 @@ pe.skipPackage('express');
 
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
+  console.log(err);
+
   console.error(pe.render(err));
+
+
   const html = ReactDOM.renderToStaticMarkup(
     <Html
       title="Internal Server Error"
