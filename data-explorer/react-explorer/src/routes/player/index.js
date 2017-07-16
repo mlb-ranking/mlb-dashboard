@@ -24,7 +24,7 @@ async function action({ fetch, params }) {
   });
 
   const { data, errors } = await resp.json();
-  log.info('player/index.js \n\n %O', { data, errors, body });
+  log.info('player/index.js: %o', { data, errors, body });
 
   if (errors) {
     log.error(errors);
@@ -38,7 +38,6 @@ async function action({ fetch, params }) {
 
   const players = data.players ? data.players : [];
   if (data.player) players.push(data.player);
-  log.info(players.length);
 
   return {
     chunks: ['player'],

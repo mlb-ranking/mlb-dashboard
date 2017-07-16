@@ -4,16 +4,20 @@ import { GraphQLList as List } from 'graphql';
 import CumulativePlayerStatType from '../types/CumulativePlayerStatType';
 import log from '../../../tools/log';
 
+// API Service Route
 const baseUrl = 'https://api.mysportsfeeds.com/';
 const path = '/v1.1/sample/pull/mlb/2016-2016-regular/active_players.json';
 const url = new URL(path, baseUrl);
 
+// Local Storage
 const playersStorage = {};
 const lastFetchTasks = {};
 
+// Misc
 let playersData;
 // const lastFetchTime = new Date(1970, 0, 1);
-// const disableCache = true;
+const debug = true;
+const logger = log.debugCreator('queries-players', { enabled: debug });
 
 /**
  * Get the name from the request
@@ -98,7 +102,7 @@ const player = {
             playerEntry => playerEntry.player,
           );
 
-          log.info('PlayersData: \n\n %O', playersData);
+          logger('PlayersData: %o', playersData);
 
           playersStorage[url.href] = playersData;
           lastFetchTasks[url.href] = null;
@@ -106,7 +110,7 @@ const player = {
         })
         .catch(err => {
           lastFetchTasks[url.href] = null;
-          log.error('Error', err);
+          logger('Error', err);
           throw err;
         });
 
