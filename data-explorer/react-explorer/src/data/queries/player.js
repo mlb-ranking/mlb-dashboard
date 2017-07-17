@@ -1,8 +1,7 @@
 import fetch from 'isomorphic-fetch';
 import { get } from 'object-path';
 
-import PlayerType from './../types/PlayerType';
-import { mlbPlayerFormatter } from '../types/PlayerType';
+import PlayerType, { mlbPlayerFormatter } from './../types/PlayerType';
 import { MlbPlayerLookup } from '../../data/services/MlbService';
 import log from '../../../tools/log';
 
@@ -20,14 +19,16 @@ function getProfileSlug(request) {
 }
 
 const cache = cacheFactory();
+let playerData;
 
 const player = {
   type: PlayerType,
   resolve({ request }) {
     // const mlbPlayerLookup = new MlbPlayerLookup().setNames(getProfileSlug(request));
-    const mlbPlayerLookup = new MlbPlayerLookup().setNames(getProfileSlug(request));
+    const mlbPlayerLookup = new MlbPlayerLookup().setNames(
+      getProfileSlug(request),
+    );
     const url = mlbPlayerLookup.url.toString();
-
 
     // Last request didn't finish
     if (cache.responses.has(url)) {
@@ -40,14 +41,18 @@ const player = {
     response
       .then(resp => resp.json())
       .then(data => {
-        let playerData = {};
         const queryResults = get(data, 'search_player_all.queryResults', {});
         const numResults = parseInt(get(queryResults, 'totalSize', 0));
-        log.verbose('player-onresp: %O', { data, queryResults, numResults, url });
+        log.verbose('player-onresp: %O', {
+          data,
+          queryResults,
+          numResults,
+          url,
+        });
 
         // No results
         if (numResults === 0) {
-          log.error('player-onresp: %O', { data, queryResults, numResults,  });
+          log.error('player-onresp: %O', { data, queryResults, numResults });
           console.log(url);
           throw new Error('Path to result does not exist');
         }
@@ -69,7 +74,6 @@ const player = {
         cache.responses.delete(url);
         cache.data.set(url, playerData);
 
-
         return mlbPlayerFormatter(playerData);
       })
       .catch(err => {
@@ -82,6 +86,8 @@ const player = {
     if (cache.data.has(url)) {
       return cache.data.get(url);
     }
+
+    return playerData;
   },
 };
 

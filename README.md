@@ -1,6 +1,6 @@
 # MLB Stats API
 
-Goal: Build an datastore and API to perform CRUD operations on baseball stats.
+Goal: Build a dashboard to interact with available apis.
 
 ## Inspiration
 * [Tumblr](http://baseballhackday.tumblr.com/)
