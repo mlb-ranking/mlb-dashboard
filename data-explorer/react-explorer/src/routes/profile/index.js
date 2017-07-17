@@ -31,7 +31,7 @@ async function action({ fetch, params }) {
   }
 
   if (!data.player) {
-    // throw new Error('Response failed with errors');
+    throw new Error('Response failed with errors');
   }
 
   return {
