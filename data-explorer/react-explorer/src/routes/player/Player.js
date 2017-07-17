@@ -15,25 +15,25 @@ import s from './Player.css';
 class Player extends React.Component {
   static defaultProps = {
     player: {
-      Age: 0,
-      FirstName: 'John',
-      LastName: 'Doe',
-      ID: -1,
+      age: 0,
+      firstName: 'John',
+      lastName: 'Doe',
+      id: -1,
     },
   };
 
   static propTypes = {
     player: PropTypes.shape({
-      Age: PropTypes.number,
-      BirthCity: PropTypes.string,
-      BirthCountry: PropTypes.string,
-      FirstName: PropTypes.string,
-      ID: PropTypes.number,
-      IsRookie: PropTypes.bool,
-      JerseyNumber: PropTypes.number,
-      LastName: PropTypes.string,
-      Position: PropTypes.string,
-      Weight: PropTypes.number,
+      age: PropTypes.number,
+      birthCity: PropTypes.string,
+      birthCountry: PropTypes.string,
+      firstName: PropTypes.string,
+      id: PropTypes.number,
+      isRookie: PropTypes.bool,
+      jerseyNumber: PropTypes.number,
+      lastName: PropTypes.string,
+      position: PropTypes.string,
+      weight: PropTypes.number,
     }),
   };
 

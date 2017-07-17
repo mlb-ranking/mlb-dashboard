@@ -21,12 +21,10 @@ async function action({ fetch, params }) {
   });
 
   const { data, errors } = await resp.json();
-  log.info('game/index.js: %o', data );
 
   if (errors || !data.game) {
     const error = new Error('Response failed with errors');
-    error.message = errors[0] && errors[0].message ? errors[0].message : error.message;
-    error.locations = errors[0] && errors[0].locations ? errors[0].locations : error.locations;
+    Object.assign(error, errors[0] || {});
     throw error;
   }
 

@@ -19,8 +19,8 @@ const routes = {
       load: () => import(/* webpackChunkName: 'game' */ './game'),
     },
     {
-      path: '/player/:first-last-id',
-      load: () => import(/* webpackChunkName: 'player' */ './player'),
+      path: '/profile/player/:profileSlug',
+      load: () => import(/* webpackChunkName: 'profile' */ './profile'),
     },
     {
       path: '/contact',

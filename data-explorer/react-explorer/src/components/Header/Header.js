@@ -8,6 +8,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
 import Link from '../Link';
@@ -15,6 +16,16 @@ import Navigation from '../Navigation';
 import logoUrl from './logo.png';
 
 class Header extends React.Component {
+  static defaultProps = {
+    title: 'MLB Data Explorer',
+    subTitle: '',
+  };
+
+  static propTypes = {
+    title: PropTypes.string,
+    subTitle: PropTypes.string,
+  };
+
   render() {
     return (
       <div className={s.root}>
@@ -22,11 +33,11 @@ class Header extends React.Component {
           <Navigation />
           <Link className={s.brand} to="/">
             <img src={logoUrl} width="38" height="38" alt="React" />
-            <span className={s.brandTxt}>MLB Data Explorer</span>
+            <span className={s.brandTxt}>{this.props.title}}</span>
           </Link>
           <div className={s.banner}>
-            <h1 className={s.bannerTitle}>MLB Data Explorer</h1>
-            <p className={s.bannerDesc}>MLB stats made easy!</p>
+            <h1 className={s.bannerTitle}>{this.props.title}</h1>
+            <p className={s.bannerDesc}>{this.props.subTitle}</p>
           </div>
         </div>
       </div>

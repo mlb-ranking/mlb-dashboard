@@ -3,11 +3,10 @@ import fetch from 'isomorphic-fetch';
 import { GraphQLList as List } from 'graphql';
 import PlayerType from '../types/PlayerType';
 import log from '../../../tools/log';
+import MySportsFeedService from '../services/MySportsFeedService';
 
 // API Service Route
-const baseUrl = 'https://api.mysportsfeeds.com/';
-const path = '/v1.1/sample/pull/mlb/2016-2016-regular/active_players.json';
-const url = new URL(path, baseUrl);
+const url = MySportsFeedService.playerUrl;
 
 // Local Storage
 const playersStorage = {};

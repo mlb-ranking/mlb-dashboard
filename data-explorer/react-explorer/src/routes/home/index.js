@@ -9,7 +9,7 @@
 
 import React from 'react';
 import Home from './Home';
-import Layout from '../../components/Layout';
+import MaterialAdmin from '../../components/MaterialAdmin';
 
 async function action({ fetch }) {
   const resp = await fetch('/graphql', {
@@ -25,9 +25,9 @@ async function action({ fetch }) {
     chunks: ['home'],
     title: 'React Starter Kit',
     component: (
-      <Layout>
+      <MaterialAdmin>
         <Home news={data.news} />
-      </Layout>
+      </MaterialAdmin>
     ),
   };
 }

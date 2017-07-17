@@ -16,11 +16,11 @@ import {
 const TeamType = new ObjectType({
   name: 'Team',
   fields: {
-    Abbreviation: { type: StringType },
-    City: { type: StringType },
-    ID: { type: IntType },
+    abbreviation: { type: StringType },
+    city: { type: StringType },
+    id: { type: IntType },
     lastUpdatedOn: { type: StringType },
-    Name: { type: StringType },
+    name: { type: StringType },
   },
 });
 

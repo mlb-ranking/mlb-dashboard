@@ -14,6 +14,7 @@ import {
 
 import news from './queries/news';
 import players from './queries/players';
+import player from './queries/player';
 import game from './queries/game';
 
 
@@ -23,6 +24,7 @@ const schema = new Schema({
     fields: {
       news,
       players,
+      player,
       game,
     },
   }),

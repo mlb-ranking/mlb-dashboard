@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch';
 import { GraphQLList as List } from 'graphql';
 import GameLogStatType from '../types/GameLogStatType';
 import log from '../../../tools/log';
-import MySportsFeedService from './../MySportsFeedService';
+import MySportsFeedService from '../services/MySportsFeedService';
 
 // Resource Url
 const url = MySportsFeedService.gameLogUrl;
@@ -24,9 +24,9 @@ const game = {
     url.searchParams.set('team', 'atl');
     url.searchParams.set('player', 'freeman');
 
-    if(requests[url.href]) {
-      return requests[url.href];
-    }
+    // if(requests[url.href]) {
+    //   return requests[url.href];
+    // }
 
     if (lastFetchTasks[url.href]) {
       return lastFetchTasks[url.href];

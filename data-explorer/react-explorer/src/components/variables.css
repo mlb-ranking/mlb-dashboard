@@ -28,4 +28,30 @@
   --screen-sm-min: 768px;  /* Small screen / tablet */
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+  /*
+   * Basic Colors from Material
+   * ======================================================================== */
+  --mlb-color-navy: #1ab394;
+  --mlb-color-dark-gray: #c2c2c2;
+  --mlb-color-blue: #1c84c6;
+  --mlb-color-lazur: #23c6c8;
+  --mlb-color-yellow: #f8ac59;
+  --mlb-color-red: #ED5565;
+  --mlb-color-text-color: #676a6c;
+  --mlb-color-gray: #f3f3f4;
+  --mlb-color-light-gray: #D1DADE;
+  --mlb-color-label-badge-color: #5E5E5E;
+  --mlb-color-light-blue: #f3f6fb;
+  --mlb-color-spin-color: var(--navy);
+  --mlb-color-border-color: #e7eaec;
+  --mlb-color-ibox-title-bg: #ffffff;
+  --mlb-color-ibox-content-bg: #ffffff;
+  --mlb-color-nav-bg: #2F4050;
+  --mlb-color-nav-text-color: #a7b1c2;
+
+  --mlb-sidebar-width: 220px;
+  --mlb-boxed-width: 1200px;
+  --mlb-btn-border-radius: 3px;
+  --mlb-mlb-spin-margin: 0 auto;
 }

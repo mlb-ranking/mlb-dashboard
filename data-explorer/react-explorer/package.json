@@ -13,11 +13,13 @@
     "not ie < 9"
   ],
   "dependencies": {
+    "animate.css": "^3.5.2",
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
     "base-64": "^0.1.0",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
+    "bootstrap-css": "^4.0.0-alpha.5",
     "classnames": "^2.2.5",
     "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
@@ -25,6 +27,7 @@
     "express": "^4.15.3",
     "express-graphql": "^0.6.6",
     "express-jwt": "^5.3.0",
+    "font-awesome": "^4.7.0",
     "graphql": "^0.10.3",
     "history": "^4.6.3",
     "isomorphic-style-loader": "^3.0.0",
@@ -32,6 +35,7 @@
     "morgan": "^1.8.2",
     "node-fetch": "^1.7.1",
     "normalize.css": "^7.0.0",
+    "object-path": "^0.11.4",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "pretty-error": "^2.1.1",
@@ -45,6 +49,7 @@
     "source-map-support": "^0.4.15",
     "sqlite3": "^3.1.8",
     "universal-router": "^3.2.0",
+    "url-parse": "^1.1.9",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
@@ -189,6 +194,7 @@
     "deploy": "babel-node tools/run deploy",
     "render": "babel-node tools/run render",
     "serve": "babel-node tools/run runServer",
-    "start": "babel-node tools/run start"
+    "start": "babel-node tools/run start",
+    "convertScss": "babel-node tools/run scss-css-variables"
   }
 }
