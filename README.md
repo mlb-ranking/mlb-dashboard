@@ -13,17 +13,18 @@ Goal: Build a dashboard to interact with available apis.
 * Yarn
 
 --- 
-### APIs
 
-## Great
+## APIs
+
+### Great
 * https://www.mysportsfeeds.com/data-feeds/api-docs
 
-## Good
+### Good
 * https://cloud.google.com/bigquery/public-data/baseball
 * https://github.com/baseballhackday/data-and-resources/wiki/Resources-and-ideas
 * http://panz.io/mlbgame/
 * http://rotoguru1.com/cgi-bin/getcred17.pl
 
-## Trials
+### Trials
 * https://fantasydata.com/pricing/mlb-data-api.aspx
 * https://developer.sportradar.com/
