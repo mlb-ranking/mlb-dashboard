@@ -62,18 +62,9 @@ class Html extends React.Component {
           <link href="/material/font-awesome/css/font-awesome.css" rel="stylesheet" />
           <link href="/material/css/animate.css" rel="stylesheet" />
           <link href="/material/css/style.css" rel="stylesheet" />
+          <link href="/material/css/plugins/dataTables/datatables.min.css" rel="stylesheet" />
 
 
-          {/*<script src="/material/js/jquery-3.1.1.min.js" defer />*/}
-          {/*<script src="/material/js/bootstrap.min.js" defer />*/}
-          {/*<script src="/material/js/plugins/metisMenu/jquery.metisMenu.js" defer />*/}
-          {/*<script src="/material/js/plugins/slimscroll/jquery.slimscroll.min.js" defer />*/}
-          {/*<script src="/material/js/inspinia.js" defer />*/}
-          {/*<script src="/material/js/plugins/pace/pace.min.js" defer />*/}
-
-
-          {/*<script src="/material/js/plugins/peity/jquery.peity.min.js" defer />*/}
-          {/*<script src="/material/js/demo/peity-demo.js" defer />*/}
 
           <script src="/material/js/jquery-3.1.1.min.js"></script>
           <script src="/material/js/bootstrap.min.js"></script>
@@ -112,6 +103,10 @@ class Html extends React.Component {
 
           {/*<!-- Toastr -->*/}
           <script src="/material/js/plugins/toastr/toastr.min.js"></script>
+
+          {/*Data Tables*/}
+          <script src="/material/js/plugins/dataTables/datatables.min.js"></script>
+
 
         </head>
         <body>
