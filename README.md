@@ -1,5 +1,7 @@
 # MLB Stats API
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mlb-ranking/mlb-dashboard.svg)](https://greenkeeper.io/)
+
 Goal: Build a dashboard to interact with available apis.
 
 ## Inspiration
